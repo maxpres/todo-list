@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Licorice&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(240, 208, 166);
+  margin: 0;
+  overflow-y: scroll;
+  min-height: 100vh;
+}
+
+.add-btn-box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 20rem;
+  height: 8vh;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 1rem;
+  font-family: "Licorice", serif;
+  font-weight: 600;
+}
+
+.eingabe-todo {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  position: relative;
+}
+
+.input {
+  width: 60vw;
+  height: 8vh;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: blanchedalmond;
+  position: absolute;
+  left: -10%;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-check-circle {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.todos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 2rem 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 60vw;
+}
+
+.selectandfilter {
+  width: 65vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.plusBtn {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(240, 208, 166);
+  transition: all 0.3s ease;
+}
+
+.add-btn-box {
+  display: grid;
+  justify-items: end;
+}
+
+.plusBtn:hover {
+  color: green;
+}
+
+li {
+  margin: 0.3rem 0;
+  width: 58vw;
+  height: 2rem;
+  font-size: 1rem;
+  border-bottom: 1.5px solid black;
+  list-style-type: none;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  font-weight: 300;
+}
+
+.todo {
+  display: flex;
+}
+
+.fa-trash:hover {
+  color: red;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.green {
+  text-decoration: 2.5px line-through;
+  background-color: green;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.clearAll.hidden {
+  display: none;
+}
+
+.clearAll {
+  background-color: blanchedalmond;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+form {
+  margin-bottom: 3rem;
+}
+
+.filter-todo {
+  background-color: blanchedalmond;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 2rem;
+}
+
+/*==========MEDIA QUERIES=============*/
+
+@media screen and (max-width: 768px) {
+  li {
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 100%;
+  }
+  .input {
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+  .plusBtn {
+    font-size: 1.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .todos {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  li {
+    font-size: 0.9rem;
+    height: 1.8rem;
+  }
+  .clearAll,
+  .filter-todo {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  .todos {
+    padding: 1.3rem;
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 380px) {
+  li {
+    font-size: 0.8rem;
+  }
+  .clearall {
+    width: 80vw;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .fa-check-circle {
+    margin-right: 0.5rem;
+  }
+}
