@@ -12,6 +12,7 @@ body {
   margin: 0;
   overflow-y: scroll;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .add-btn-box i {
@@ -21,7 +22,6 @@ body {
   width: 20rem;
   position: absolute;
   top: 0.3rem;
-  padding-right: 2rem;
 }
 
 h3 {
