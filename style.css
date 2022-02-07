@@ -14,12 +14,13 @@ body {
   min-height: 100vh;
 }
 
-.add-btn-box {
+.add-btn-box i {
   display: flex;
   justify-content: end;
   align-items: center;
   width: 20rem;
-  height: 8vh;
+  position: absolute;
+  top: 0.3rem;
 }
 
 h3 {
@@ -35,6 +36,7 @@ h3 {
   justify-content: space-between;
   width: 50vw;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .input {
@@ -142,10 +144,6 @@ li {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease-in;
-}
-
-form {
-  margin-bottom: 3rem;
 }
 
 .filter-todo {
