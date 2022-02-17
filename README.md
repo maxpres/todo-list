@@ -1,3 +1,3 @@
-# TODO LIST PROJECT
+# Todo list Project
 
 Todo list application
