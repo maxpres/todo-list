@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Licorice&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Licorice&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Heebo', sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,6 +22,7 @@ body {
   top: 0.2rem;
   right: 0rem;
   color: rgb(24, 23, 22);
+  cursor: pointer;
 }
 
 .plusBtn {
@@ -32,7 +33,7 @@ h3 {
   font-size: 4rem;
   font-weight: 300;
   margin: 1rem;
-  font-family: "Licorice", serif;
+  font-family: 'Licorice', serif;
   font-weight: 600;
 }
 
