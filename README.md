@@ -1,3 +1,3 @@
-# Todo list Project
+# To-do list Project
 
-This application is a todo list that saves your entered data. Completed tasks can be marked as this. A filter can be used to display tasks that are still to be done or are already completed.
+This to-do list is designed to make you life easier. By ticking boxes and using filters this tool is made to maintain an overview on you everyday tasks in clean and simple way.
